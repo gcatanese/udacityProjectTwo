@@ -18,16 +18,15 @@ A clustering column has been used in USER_PLAY to ensure the order of the query 
 
 ## Files
 
-- solution.py: create database, data tables and perform load/insert/query
-- READMME.md: intro and instructions
+- Project_1B.ipynb: Jupiter notebook with all steps: create database, data tables and perform load/insert/query
+- READMME.md: documentation
 
 ### Pre-requisites
 
 1. Cassandra must run on localhost, default port
+2. XLS file must be available in the /event_data folder
 
-### Execution
 
-1. python solution.py
 
 
 
