@@ -20,7 +20,7 @@ A clustering column has been used in USER_PLAY to ensure the order of the query 
 
 ### Task 1: Getting the artist, song's title and song's length for a given session_id and item_in_session
 
-In order to model this query the primary key includes session_id and itemInSession columns because the combination
+In order to model this query the primary key includes session_id and item_in_session columns because the combination
 is unique across all rows and we want keep the data in the same partition (partition key).
 
 ```
@@ -43,9 +43,9 @@ query = query + "(user_id int, session_id int, item_in_session int, artist_name 
 
 ### Task 3: Getting the users who listened to a given song
 
-In order to model this query the primary key includes song's title, user first name, last name and id because
+In order to model this query the primary key includes song's title, user first name, last name and user_id because
 the combination is unique across all rows (it must consider the possibility of users with the same
-first name and lastname, hence the need to include the user_id column).
+first name and last name, hence the need to include the user_id column).
 
 ```
 query = "CREATE TABLE IF NOT EXISTS song_history "
